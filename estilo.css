@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+nav{
+    font-size: 19px;
+    width: auto;
+    height: 7vh;
+    background-color:rgb(241, 86, 96);
+}
+
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul{
+    margin:0;
+    height: 100%;
+}
+
+li a{
+    text-decoration: none;
+    margin: 0em 3em;
+    list-style: nule;
+    height: 100%;
+    padding: 1.6em 0;
+}
+li{
+    padding: .7em 0;
+}
+
+nav li:hover, nav li:focus{
+    background-color:rgb(255, 0, 17) ;
+}
+
+header{
+    width: 100%;
+    height: 10vh;
+    background-color: cornsilk;
+}
+
+header figure{
+    width: 4em;
+    display: inline-block;
+    margin-right: .2em;
+}
+
+header img{
+    width: 100%;
+}
+
+header h1{
+    vertical-align: bottom;
+    display: inline-block;
+    padding-bottom: .43em;
+    color: rgba(63, 51, 51, 0.829);
+}
+
+.contenedor{
+    display: flex;
+    flex-direction:row;
+    height: auto;
+    background-color: azure;
+}
+
+aside{
+    background-color: azure;
+    width: 25%;
+    height: 100%;
+    font-size: 19px;
+}
+
+aside figure{
+    width: 100%;
+}
+
+aside img{
+    width: 100%;
+    height: 10em;
+    margin-left: .5em;
+    margin-top:.5em;
+}
+
+aside ul{
+    display: flex;
+    flex-direction: column;
+}
+
+aside li{
+    text-align: center;
+    padding: 1.1em;
+}
+
+aside p{
+    margin: .6em;
+}
+main{
+    width: 100%;
+    font-size: 21px;
+    font-weight: 300;
+}
+main figure{
+    width: 28%;
+    float: right;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+main img{
+    width: 100%;
+}
+
+main p{
+    margin: 1em;
+    padding: 1em;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: cornsilk;
+}
+
+footer p{
+    text-align: center;
+    padding: .2em;
+    height: 3vh;
+}
+
+.galeria figcaption{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.galeria{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 75vh;
+    background-color: azure;
+}
+
+.galeria figure{
+    width: 15em;
+    box-shadow: 5px 5px 0px #555;
+    background-color: white;
+}
+
+footer img{
+    height: auto;
+}
+
+
+
+
+
+
+
