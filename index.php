@@ -1,6 +1,6 @@
 <?php
-    include_once("html/encabezado.html");
-    include_once("php/juegos.php");
+    include_once("encabezado.html");
+    include_once("juegos.php");
 ?>
 
 <?php
@@ -133,5 +133,5 @@
 </section>
 
 <?php
-    include_once("html/pie.html");
+    include_once("pie.html");
 ?>
