@@ -1,82 +1,176 @@
 * {
+    margin: 0;
     padding: 0;
     border: 0;
-    font-size: 1.2em;
-    margin: 2.4em;
 }
 
-body {
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+}
+
+.contenedor {
+    margin: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: black;
 }
 
-.cara,
-#cubo {
-    width: 200px;
-    height: 200px;
+/* 
+#caja1 {
+    border-bottom: 7em solid rgb(255, 134, 0);
+    border-right: 4.2em solid transparent;
+    border-left: 4.2em solid transparent;
+} */
+
+#caja2 {
+    border-radius: 50%;
+    width: 7em;
+    height: 7em;
+}
+
+/* 
+#caja3 {
+    width: 7em;
+    height: 7em;
+    background-color: rgb(0, 175, 224);
+}
+
+#caja4 {
+    width: 10em;
+    height: 7em;
+    background-color: rgb(255, 74, 77);
+    transform: skew(-20deg);
+}
+
+#caja5 {
+    width: 7em;
+    height: 7em;
+    background-color: rgb(223, 85, 240);
+    transform: rotate(45deg);
+}
+
+#caja6 {
+    width: 12em;
+    height: 7em;
+    background-color: rgb(217, 56, 179);
+}
+
+#caja7 {
+    height: 10em;
+    width: 7em;
+    background-color: rgb(223, 85, 240);
+    border-radius: 50%;
+}
+
+#caja8 {
+    width: 6em;
+    border-right: 4em solid transparent;
+    border-left: 4em solid transparent;
+    border-bottom: 7em solid rgb(0, 175, 224);
+}
+
+#caja9 {
+    width: 6em;
+    border-right: 2em solid transparent;
+    border-left: 2em solid transparent;
+    border-top: 6em solid rgb(1, 210, 54);
+    margin-top: 4em;
+}
+
+#caja9::before {
+    content: '';
+    position: absolute;
+    border-bottom: 4em solid rgb(1, 210, 54);
+    border-right: 5em solid transparent;
+    border-left: 5em solid transparent;
+    transform: translate(-2em, -10em);
+}
+
+
+#caja10 {
+    width: 9em;
+    height: 5em;
+    background-color: rgb(223, 85, 240);
+}
+
+#caja10::before {
+    content: '';
+    position: absolute;
+    border-top: 3em solid rgb(223, 85, 240);
+    border-right: 4.5em solid transparent;
+    border-left: 4.5em solid transparent;
+    transform: translate(0em, 5em);
+}
+
+#caja10::after {
+    content: '';
+    position: absolute;
+    border-bottom: 3em solid rgb(223, 85, 240);
+    border-right: 4.5em solid transparent;
+    border-left: 4.5em solid transparent;
+    transform: translate(0em, -3em);
+}
+
+#caja11 {
+    height: 3em;
+    width: 6em;
+    background: rgb(255, 74, 77);
+}
+
+#caja11::before {
+    content: '';
+    display: block;
+    border-bottom: 1.5em solid rgb(255, 74, 77);
+    border-left: 1.5em solid transparent;
+    border-right: 1.5em solid transparent;
+    transform: translateY(-1.5em);
+}
+
+#caja11::after {
+    content: '';
+    display: block;
+    border-top: 1.5em solid rgb(255, 74, 77);
+    border-left: 1.5em solid transparent;
+    border-right: 1.5em solid transparent;
+    transform: translateY(1.5em);
+}
+
+#caja12 {
+    border-right: 5em solid transparent;
+    border-bottom: 4em solid rgb(1, 210, 54);
+    border-left: 5em solid transparent;
+    transform: rotate(-33deg);
+}
+
+#caja12::after {
+    content: '';
+    border-right: 5em solid transparent;
+    border-left: 5em solid transparent;
+    border-top: 4em solid rgb(1, 210, 54);
+    transform: rotate(255deg);
+    top: .2em;
+    left: -5em;
     position: absolute;
 }
 
-
-.cara {
-    background-image: radial-gradient(circle at 37.72% -19.64%, #ffcaff 0, #ffc1ff 12.5%, #ffb7ff 25%, #ffabff 37.5%, #f29df2 50%, #cc8fde 62.5%, #ac82cc 75%, #9078bb 87.5%, #786fac 100%);
-    transition: opacity ease 1;
-}
-
-.cara:hover {
-    opacity: 0;
-}
-
-#cara1 {
-    background-color: red;
-    transform: rotateX(90deg) translateZ(100px);
-}
-
-#cara2 {
-    background-color: rebeccapurple;
-    transform: translateZ(100px);
-}
-
-#cara3 {
-    background-color: royalblue;
-    transform: translateZ(-100px);
-}
-
-#cara4 {
-    background-color: brown;
-    transform: rotateY(90deg) translateZ(100px);
-}
-
-#cara5 {
-    background-color: violet;
-    transform: rotateY(-90deg) translateZ(100px) translateY(-96px);
-}
-
-#cara6 {
-    background-color: teal;
-    transform: rotateX(-90deg) translateZ(3px);
-}
-
-#cubo {
-    transform-style: preserve-3d;
-    transform: perspective(700px) rotateX(-30deg) rotateY(-30deg);
-    animation: rodar 6s infinite linear;
-}
-
-
-@keyframes rodar {
-    0% {
-        transform: rotateX(0deg) rotateY(0deg);
-    }
-
-    100% {
-        transform: rotateX(360deg) rotateY(360deg);
-    }
-}
-
-/* IMAGEN Y ESO */
-
-img {
-    width: 4em;
+#caja12::before {
+    content: '';
+    border-right: 5em solid transparent;
+    border-left: 5em solid transparent;
+    border-bottom: 4em solid rgb(1, 210, 54);
+    top: .4em;
+    left: -5em;
+    transform: rotate(141deg);
     position: absolute;
-    transform: translateX(-110px) translateY(-80px);
+} */
+
+.contenedor2 {
+    margin: 5em;
 }
