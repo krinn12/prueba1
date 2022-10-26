@@ -60,14 +60,17 @@ form::after {
     border: .1em solid black;
     position: absolute;
     z-index: -1;
-    left: 1.1em;
-    top: 1.2em;
-    transform: translate(-.5em, -1em) rotate(3deg);
 }
 
 /* animacion para el boton */
 
 @media (hover: hover) {
+
+    form::after {
+        left: 1.1em;
+        top: 1.2em;
+        transform: translate(-.5em, -1em) rotate(3deg);
+    }
 
     form input[type='submit']:hover {
         transform: translate(.2em, .2em);
