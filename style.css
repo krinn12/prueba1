@@ -12,6 +12,10 @@
     --borde_sec: rgb(249, 197, 93);
 }
 
+body {
+    height: 100vh;
+}
+
 form {
     background-color: var(--color_form);
     border: .1em solid var(--color_bordes);
@@ -68,6 +72,7 @@ form::after {
     form input[type='submit']:hover {
         transform: translate(.2em, .2em);
         box-shadow: none;
+        cursor: pointer;
     }
 
     form:hover::after {
@@ -106,5 +111,26 @@ form::after {
             top: 1.2em;
             transform: translate(-.5em, -1em) rotate(3deg);
         }
+    }
+}
+
+/* para pantalla de celular */
+
+@media all and (max-width:1024px) {
+
+    form::after {
+        left: 0em;
+        top: 0em;
+        transform: translate(0em, 0em) rotate(0deg);
+    }
+
+    form {
+        margin: 5em 4em;
+        width: auto;
+        font-size: .8em;
+    }
+
+    form input[type='submit'] {
+        width: auto;
     }
 }
